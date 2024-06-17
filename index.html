@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clickable Lists</title>
+    <title>Toggle Sidebar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button id="toggleButton" onclick="toggleSidebar()">Toggle Sidebar</button>
     <div class="container">
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             <ul>
                 <li onclick="listItemClicked()">List 1</li>
                 <li onclick="listItemClicked()">List 2</li>
@@ -17,7 +18,7 @@
                 <li onclick="listItemClicked()">List 5</li>
             </ul>
         </div>
-        <div class="main-content">
+        <div class="main-content" id="mainContent">
             <h1>Main Content Area</h1>
             <p>This is where the main content will go.</p>
         </div>
