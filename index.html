@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Clickable Lists</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Hola</p>
-    <p>pelusa gay</p>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li onclick="listItemClicked()">List 1</li>
+                <li onclick="listItemClicked()">List 2</li>
+                <li onclick="listItemClicked()">List 3</li>
+                <li onclick="listItemClicked()">List 4</li>
+                <li onclick="listItemClicked()">List 5</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Main Content Area</h1>
+            <p>This is where the main content will go.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
